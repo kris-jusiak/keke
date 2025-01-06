@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Memory of KeKe</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: black;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 95vh;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .header {
+            font-size: 2.0em;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 1.3em;
+            color: gray;
+            margin: 5px 0 20px 0;
+        }
+
+        .slideshow {
+            width: 80%;
+            max-width: 600px;
+            height: 400px;
+            position: relative;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            background: black;
+        }
+
+        .slides {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: flex;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+
+        .slides img {
+            margin: auto;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+            display:none;
+        }
+
+        .video video {
+            margin: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .active {
+            opacity: 1;
+            display: block;
+        }
+
+        .heart {
+            position: absolute;
+            color: #ff69b4;
+            font-size: 2em;
+            animation: float 10s infinite ease-in-out;
+            opacity: 0;
+            bottom: -5%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateX(-50%) translateY(0);
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateX(-50%) translateY(-100vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p class="header">In Memory of a Perfect Ferret: KeKe</p>
+    <p>2018 - 2025, Love you 😍😍😍</p>
+
+    <div class="slideshow">
+        <img class="slides active" src="images/keke00.jpg"></img>
+        <img class="slides" src="images/keke03.jpg">
+        <img class="slides" src="images/keke04.jpg">
+        <img class="slides" src="images/keke05.jpg">
+        <img class="slides" src="images/keke10.jpg">
+        <img class="slides" src="images/keke11.jpg">
+        <img class="slides" src="images/keke09.jpg">
+        <img class="slides" src="images/keke07.jpg">
+        <img class="slides" src="images/keke08.jpg">
+        <img class="slides" src="images/keke02.jpg">
+        <img class="slides" src="images/keke12.jpg">
+        <img class="slides" src="images/keke13.jpg">
+        <img class="slides" src="images/keke14.jpg">
+        <img class="slides" src="images/keke15.jpg">
+        <img class="slides" src="images/keke16.jpg">
+        <img class="slides" src="images/keke17.jpg">
+        <img class="slides" src="images/keke18.jpg">
+        <img class="slides" src="images/keke19.jpg">
+        <img class="slides" src="images/keke21.jpg">
+        <img class="slides" src="images/keke22.jpg">
+        <img class="slides" src="images/keke23.jpg">
+        <img class="slides" src="images/keke24.jpg">
+        <img class="slides" src="images/keke25.jpg">
+        <img class="slides" src="images/keke26.jpg">
+        <img class="slides" src="images/keke27.jpg">
+        <img class="slides" src="images/keke28.jpg">
+        <img class="slides" src="images/keke29.jpg">
+        <img class="slides" src="images/keke30.jpg">
+        <img class="slides" src="images/keke31.jpg">
+        <img class="slides" src="images/keke32.jpg">
+
+        <video class="video" src="videos/keke14.mp4" controls></video>
+        <video class="video" src="videos/keke15.mp4" controls></video>
+        <video class="video" src="videos/keke02.mp4" controls></video>
+        <video class="video" src="videos/keke19.mp4" controls></video>
+        <video class="video" src="videos/keke16.mp4" controls></video>
+        <video class="video" src="videos/keke18.mp4" controls></video>
+        <video class="video" src="videos/keke04.mp4" controls></video>
+        <video class="video" src="videos/keke05.mp4" controls></video>
+        <video class="video" src="videos/keke17.mp4" controls></video>
+        <video class="video" src="videos/keke00.mp4" controls></video>
+        <video class="video" src="videos/keke01.mp4" controls></video>
+        <video class="video" src="videos/keke03.mp4" controls></video>
+        <video class="video" src="videos/keke06.mp4" controls></video>
+        <video class="video" src="videos/keke07.mp4" controls></video>
+        <video class="video" src="videos/keke08.mp4" controls></video>
+        <video class="video" src="videos/keke09.mp4" controls></video>
+        <video class="video" src="videos/keke10.mp4" controls></video>
+        <video class="video" src="videos/keke11.mp4" controls></video>
+        <video class="video" src="videos/keke12.mp4" controls></video>
+        <video class="video" src="videos/keke13.mp4" controls></video>
+        <video class="video" src="videos/keke21.mp4" controls></video>
+        <video class="video" src="videos/keke22.mp4" controls></video>
+        <video class="video" src="videos/keke23.mp4" controls></video>
+        <video class="video" src="videos/keke24.mp4" controls></video>
+        <video class="video" src="videos/keke25.mp4" controls></video>
+    </div>
+
+    <div class="controls">
+        <button style="width:100px; margin: 0px 20px;" id="prev">Previous</button>
+        <button style="width:100px; margin: 0px 20px;" id="next">Next</button>
+    </div>
+
+    <br />
+    <p>R.I.P.</p>
+    🕯️🕯️🕯️🕯️🕯️🕯️🕯️
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slides, .video');
+        const totalSlides = slides.length;
+        let interval;
+
+        function showSlide(index) {
+            slides[currentSlide].style = "display:none";
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (index + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            slides[currentSlide].style = "display:block";
+        }
+
+        function showNextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function showPrevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.style.left = '5%';
+            heart.style.animationDuration = '25s';
+            heart.innerText = '❤️';
+            document.body.appendChild(heart);
+
+            const heart2 = document.createElement('div');
+            heart2.classList.add('heart');
+            heart2.style.left = '95%';
+            heart2.style.animationDuration = '25s';
+            heart2.innerText = '❤️';
+            document.body.appendChild(heart2);
+        }
+
+        setInterval(createHeart, 1000);
+
+         document.addEventListener('click', (event) => {
+              const screenWidth = window.innerWidth;
+              const clickPosition = event.clientX;
+
+              if (clickPosition < screenWidth / 2) {
+                showPrevSlide();
+              } else {
+                showNextSlide();
+              }
+            });
+    </script>
+</body>
